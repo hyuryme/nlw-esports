@@ -1,0 +1,195 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    padding-top: 32px;  
+    height: 143px;
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    display: flex;
+    border-radius: 50%;
+    padding: 4px;
+    transition: transform .4s;
+    animation: fromTop 1.5s backwards;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+body {
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body * {
+    font-family: "inter", Arial, Helvetica, sans-serif;
+    line-height: 160%;
+}
+
+
+/* main * {
+    border: 1px solid green;
+} */
+
+main {
+    max-width: 500px;
+    width: 100%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+main section:nth-child(1) {
+    animation: fromLeft 2s backwards;
+}
+
+main section:nth-child(2) {
+    animation: fromRight 2.5s backwards;
+}
+
+main section:nth-child(3) {
+    animation: fromBottom 1.5s backwards;
+}
+
+ul li:nth-child(1) {
+    animation: fromBottom 1.5s backwards;
+}
+
+ul li:nth-child(2) {
+    animation: fromBottom 1.5s backwards;
+}
+
+ul li:nth-child(3) {
+    animation: fromBottom 1.5s backwards;
+}
+
+ul li:nth-child(4) {
+    animation: fromBottom 1.5s backwards;
+}
+
+ul li:nth-child(5) {
+    animation: fromBottom 1.5s backwards;
+}
+
+section {
+    color: #FFFFFF;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section p {
+    color: #A1A1AA;
+    letter-spacing: -0.18px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section ul {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .4s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img {
+    width: 70px;
+    border-radius: 50px;
+    border: 1px solid #443E54;
+}
+
+@keyframes fromTop {
+
+    from {
+        opacity: 0;
+        transform: translateY(-32px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fromLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(-32px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(32px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
