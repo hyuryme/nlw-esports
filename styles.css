@@ -8,6 +8,10 @@ ul {
     list-style: none;
 }
 
+header a {
+    display: flex;
+}
+
 header {
     padding-top: 32px;  
     height: 143px;
@@ -31,7 +35,6 @@ header div:hover {
 header img {
     width: 100%;
     border-radius: 50%;
-    
 }
 
 body {
@@ -47,14 +50,9 @@ body * {
     line-height: 160%;
 }
 
-
-/* main * {
-    border: 1px solid green;
-} */
-
 main {
-    max-width: 500px;
-    width: 100%;
+    max-width: 520px;
+    width: 90%;
     margin: 32px auto;
     display: grid;
     gap: 24px;
@@ -117,6 +115,7 @@ section h2 {
 
 section ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     margin-top: 24px;
 }
@@ -130,7 +129,7 @@ section ul li:hover {
 }
 
 .games-list img {
-    width: 90px;
+    width: 100px;
     border-radius: 8px;
 }
 
@@ -138,6 +137,12 @@ section ul li:hover {
     width: 70px;
     border-radius: 50px;
     border: 1px solid #443E54;
+}
+
+#madeBy {
+    font-size: 14px;
+    color: #9572FC;
+    text-align: center;
 }
 
 @keyframes fromTop {
